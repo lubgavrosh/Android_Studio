@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:padding="12dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!-- Name -->
+        <EditText
+            android:id="@+id/editName"
+            android:hint="Your name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <!-- Image -->
+        <ImageView
+            android:id="@+id/imageProduct"
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/sk" />
+
+        <!-- Spinner -->
+        <Spinner
+            android:id="@+id/spinnerProducts"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"/>
+
+        <!-- Price -->
+        <TextView
+            android:text="Order Price"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/textPrice"
+            android:text="0 $"
+            android:textSize="18sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <!-- Quantity -->
+        <TextView
+            android:text="Quantity"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/buttonMinus"
+                android:text="-"
+                android:layout_width="60dp"
+                android:layout_height="60dp"/>
+
+            <TextView
+                android:id="@+id/textQuantity"
+                android:text="0"
+                android:textSize="20sp"
+                android:gravity="center"
+                android:layout_width="80dp"
+                android:layout_height="60dp"/>
+
+            <Button
+                android:id="@+id/buttonPlus"
+                android:text="+"
+                android:layout_width="60dp"
+                android:layout_height="60dp"/>
+        </LinearLayout>
+
+        <!-- Button -->
+        <Button
+            android:id="@+id/buttonNext"
+            android:text="ADD TO CART"
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+</ScrollView>
