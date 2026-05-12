@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">class_work_lesson_2</string>
+    <string name="color">Color</string>
+    <string name="orange">Orange</string>
+    <string name="red">Red</string>
+    <string name="yellow">Yellow</string>
+    <string name="Red">Red</string>
+    <string name="Orange">Orange</string>
+    <string name="Yellow">Yellow</string>
+</resources>
