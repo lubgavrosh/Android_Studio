@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back_3"
+    android:onClick="onClick"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/text_cat"
+        android:layout_width="131dp"
+        android:layout_height="59dp"
+        android:layout_marginStart="9dp"
+        android:layout_marginTop="94dp"
+        android:layout_marginEnd="117dp"
+        android:text="I like milk"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/image_cat"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/image_cat"
+        android:layout_width="117dp"
+        android:layout_height="91dp"
+        android:layout_marginStart="37dp"
+        android:layout_marginTop="76dp"
+        android:layout_marginEnd="248dp"
+        android:layout_marginBottom="551dp"
+        android:contentDescription="fish"
+        android:onClick="onClick"
+        android:src="@drawable/cat"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageView
+        android:id="@+id/image_car"
+        android:layout_width="130dp"
+        android:layout_height="125dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="304dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="302dp"
+        android:contentDescription="car"
+        android:onClick="onClick"
+        android:src="@drawable/car"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.185"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.58000004"
+        tools:ignore="HardcodedText" />
+
+    <TextView
+        android:id="@+id/text_car"
+        android:layout_width="180dp"
+        android:layout_height="27dp"
+        android:layout_marginStart="37dp"
+        android:layout_marginTop="293dp"
+        android:layout_marginEnd="194dp"
+        android:layout_marginBottom="411dp"
+        android:text="Don't drink while driving"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/image_dog"
+        android:layout_width="149dp"
+        android:layout_height="81dp"
+        android:layout_marginStart="238dp"
+        android:layout_marginTop="459dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="191dp"
+        android:contentDescription="dog"
+        android:src="@drawable/dog"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/text_dog"
+        android:layout_width="115dp"
+        android:layout_height="21dp"
+        android:layout_marginStart="272dp"
+        android:layout_marginTop="428dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="282dp"
+        android:contentDescription="TODO"
+        android:text="Doing nothing is hard"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/image_fish"
+        android:layout_width="113dp"
+        android:layout_height="89dp"
+        android:layout_marginStart="6dp"
+        android:layout_marginTop="626dp"
+        android:layout_marginEnd="9dp"
+        android:layout_marginBottom="16dp"
+        android:onClick="onClick"
+        android:src="@drawable/fish"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/text_fish"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <TextView
+        android:id="@+id/text_fish"
+        android:layout_width="180dp"
+        android:layout_height="49dp"
+        android:layout_marginStart="139dp"
+        android:layout_marginTop="661dp"
+        android:layout_marginEnd="99dp"
+        android:layout_marginBottom="43dp"
+        android:text="Every rule has an exception"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/image_fish"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
