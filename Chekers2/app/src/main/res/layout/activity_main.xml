@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:orientation="vertical"
+android:background="#1A1A2E"
+android:gravity="center_horizontal">
+
+<!-- Tytuł -->
+<TextView
+    android:id="@+id/tvTitle"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="WARCABY"
+    android:textColor="#E0E0E0"
+    android:textSize="28sp"
+    android:textStyle="bold"
+    android:letterSpacing="0.15"
+    android:layout_marginTop="24dp"
+    android:layout_marginBottom="8dp" />
+
+<!-- Status gry -->
+<TextView
+    android:id="@+id/tvStatus"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Ruch: Czarne"
+    android:textColor="#A0A0C0"
+    android:textSize="16sp"
+    android:layout_marginBottom="16dp" />
+
+<!-- Rachunek  -->
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:layout_marginBottom="16dp">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:background="#16213E"
+        android:padding="12dp"
+        android:layout_marginEnd="8dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Czarne"
+            android:textColor="#A0A0C0"
+            android:textSize="13sp" />
+
+        <TextView
+            android:id="@+id/tvScoreBlack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="12"
+            android:textColor="#E0E0E0"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="—"
+        android:textColor="#505070"
+        android:textSize="22sp"
+        android:layout_gravity="center"
+        android:layout_marginHorizontal="4dp" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:background="#16213E"
+        android:padding="12dp"
+        android:layout_marginStart="8dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Białe"
+            android:textColor="#A0A0C0"
+            android:textSize="13sp" />
+
+        <TextView
+            android:id="@+id/tvScoreWhite"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="12"
+            android:textColor="#E0E0E0"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+</LinearLayout>
+
+<!-- Pole gry -->
+<FrameLayout
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:layout_weight="1"
+    android:padding="12dp">
+
+    <!--  Siatka komórek (8x8) — zastąpić niestandardowym widokiem -->
+    <GridLayout
+        android:id="@+id/boardGrid"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#0D0D1A"
+        android:columnCount="8"
+        android:rowCount="8"
+        android:useDefaultMargins="false" />
+
+</FrameLayout>
+
+<!--Przyciski sterujące -->
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:gravity="center"
+    android:padding="16dp">
+
+    <Button
+        android:id="@+id/btnNewGame"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:layout_weight="1"
+        android:layout_marginEnd="8dp"
+        android:text="Nowa gra"
+        android:textColor="#E0E0E0"
+        android:backgroundTint="#0F3460"
+        android:textSize="14sp"
+        android:stateListAnimator="@null" />
+
+    <Button
+        android:id="@+id/btnUndo"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:layout_weight="1"
+        android:layout_marginStart="8dp"
+        android:text="Cofnij ruch"
+        android:textColor="#E0E0E0"
+        android:backgroundTint="#16213E"
+        android:textSize="14sp"
+        android:stateListAnimator="@null" />
+</LinearLayout>
+
+</LinearLayout>
